@@ -1,11 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # Análise Fatorial PCA
-# Análise de Dados com Python
-
-# Prof. Luiz Paulo Fávero
-# Prof. Wilson Tarantin Jr.
-# Prof. Helder Prado
+# Atlas de desenvolvimento da cidade de São Pauilo
 
 #%% Instalando os pacotes
 
@@ -36,7 +32,7 @@ import shapefile as shp
 
 #%% Importando o banco de dados
 
-atlas = pd.read_excel("Webinar_II/atlas_ambiental.xlsx")
+atlas = pd.read_excel("atlas_ambiental.xlsx")
 
 #%% Informações sobre as variáveis
 
@@ -180,7 +176,7 @@ dados_mapa = atlas[['cód_ibge', 'distritos', 'Fator 1']].sort_values(by=['cód_
 
 #%% Importando o mapa da cidade de São Paulo
 
-sf = shp.Reader("Webinar_II/DEINFO_DISTRITO")
+sf = shp.Reader("DEINFO_DISTRITO")
 
 def read_shapefile(sf):
     fields = [x[0] for x in sf.fields][1:]
@@ -277,4 +273,3 @@ data = list(dados_mapa['Fator 1']) # indicador socioeconômico (fator)
 color_ton = calc_color(data) # tonalidade de cores
 plot_map_fill_multiples_ids_3(dist, 'Indicador Socioeconômico', distritos, color_ton)
 
-#%% Fim!
