@@ -225,11 +225,11 @@ plot_map(dist)
 
 #%% Definindo as cores 
 
-# Vamos dividir os valores do fator em 6 faixas
+# Vamos dividir os valores do fator em 5 faixas
 
 def calc_color(data):
-        new_data = pd.qcut(data, 6, labels=list(range(6)))
-        paleta = sns.color_palette('YlOrBr', n_colors=6)
+        new_data = pd.qcut(data, 5, labels=list(range(5)))
+        paleta = sns.color_palette('plasma', n_colors=5)
         color_sq = paleta.as_hex()
         color_ton = []
         for val in new_data:
