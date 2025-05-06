@@ -11,5 +11,5 @@ Em seguida fiz o gráfico da cidade por distrito e usei o fator 1 dividido em 5 
 
 Fonte: http://dados.prefeitura.sp.gov.br/dataset/distritos
 
-![image](https://github.com/user-attachments/assets/7f0c0f99-22c9-45a8-b3df-f96e78db7df0)
+![image](https://github.com/user-attachments/assets/a87a35d4-2890-4d5e-94ec-3a1cde7ff995)
 
