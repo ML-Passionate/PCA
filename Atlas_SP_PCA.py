@@ -229,7 +229,7 @@ plot_map(dist)
 
 def calc_color(data):
         new_data = pd.qcut(data, 5, labels=list(range(5)))
-        paleta = sns.color_palette('plasma', n_colors=5)
+        paleta = sns.color_palette('pastel', n_colors=5)
         color_sq = paleta.as_hex()
         color_ton = []
         for val in new_data:
